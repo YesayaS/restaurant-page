@@ -1,13 +1,15 @@
 import { loadHome } from "./home";
 import { loadContact } from "./contact";
 import { loadMenu } from "./menu";
+import "./style.css";
 
 const contentClass = "content";
 
 function createHeader() {
-  const header = document.createElement("header");
+  const header = document.createElement("div");
+  header.classList.add("header");
 
-  const restaurantTitle = document.createElement("h1");
+  const restaurantTitle = document.createElement("div");
   restaurantTitle.textContent = "Warung Nusantara";
 
   header.appendChild(restaurantTitle);
@@ -16,21 +18,25 @@ function createHeader() {
 }
 
 function nav() {
-  const nav = document.createElement("nav");
+  const nav = document.createElement("div");
+  nav.classList.add("nav");
 
-  const home = document.createElement("button");
+  const home = document.createElement("a");
+  home.classList.add("nav__a");
   home.textContent = "Home";
   home.addEventListener("click", (e) => {
     loadHome(contentClass);
   });
 
-  const menu = document.createElement("button");
+  const menu = document.createElement("a");
+  menu.classList.add("nav__a");
   menu.textContent = "Menu";
   menu.addEventListener("click", (e) => {
     loadMenu(contentClass);
   });
 
-  const contact = document.createElement("button");
+  const contact = document.createElement("a");
+  contact.classList.add("nav__a");
   contact.textContent = "Contact";
   contact.addEventListener("click", (e) => {
     loadContact(contentClass);
@@ -50,7 +56,8 @@ function createContent() {
 }
 
 function createFooter() {
-  const footer = document.createElement("footer");
+  const footer = document.createElement("div");
+  footer.classList.add("footer");
 
   const restaurantTitle = document.createElement("h1");
   restaurantTitle.textContent = "Copyright © YesayaS";
