@@ -21,10 +21,18 @@ function nav() {
   const nav = document.createElement("div");
   nav.classList.add("nav");
 
+  const removeUnderline = () => {
+    home.classList.remove("nav__a--active");
+    menu.classList.remove("nav__a--active");
+    contact.classList.remove("nav__a--active");
+  };
+
   const home = document.createElement("a");
-  home.classList.add("nav__a");
+  home.classList.add("nav__a", "nav__a--active");
   home.textContent = "Home";
   home.addEventListener("click", (e) => {
+    removeUnderline();
+    home.classList.add("nav__a--active");
     loadHome(contentClass);
   });
 
@@ -32,6 +40,8 @@ function nav() {
   menu.classList.add("nav__a");
   menu.textContent = "Menu";
   menu.addEventListener("click", (e) => {
+    removeUnderline();
+    menu.classList.add("nav__a--active");
     loadMenu(contentClass);
   });
 
@@ -39,6 +49,8 @@ function nav() {
   contact.classList.add("nav__a");
   contact.textContent = "Contact";
   contact.addEventListener("click", (e) => {
+    removeUnderline();
+    contact.classList.add("nav__a--active");
     loadContact(contentClass);
   });
 
@@ -73,7 +85,7 @@ function initializeWebpage() {
   body.appendChild(createContent());
   body.appendChild(createFooter());
 
-  loadMenu(contentClass);
+  loadHome(contentClass);
 }
 
 initializeWebpage();
