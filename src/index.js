@@ -2,7 +2,6 @@ import { loadHome } from "./home";
 import { loadContact } from "./contact";
 import { loadMenu } from "./menu";
 import "./style.css";
-import nasiuduk from "./nasi-uduk.jpg";
 
 const contentClass = "content";
 
