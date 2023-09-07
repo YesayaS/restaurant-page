@@ -12,8 +12,8 @@ function createHeader() {
   const restaurantTitle = document.createElement("div");
   restaurantTitle.textContent = "Warung Nusantara";
 
-  header.appendChild(restaurantTitle);
   header.appendChild(nav());
+  header.appendChild(restaurantTitle);
   return header;
 }
 

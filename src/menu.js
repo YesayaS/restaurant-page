@@ -1,7 +1,7 @@
 function loadMenu(contentClass) {
   const content = document.querySelector(`.${contentClass}`);
   content.removeAttribute("class");
-  content.classList.add(contentClass, "home");
+  content.classList.add(contentClass, "menu");
   content.textContent = "";
 
   const hookText = document.createElement("h2");
