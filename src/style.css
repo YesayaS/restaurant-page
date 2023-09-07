@@ -50,6 +50,7 @@ body {
   padding: 20px;
   font-size: 2.5rem;
   color: var(--header-text);
+  border-bottom: 1px solid var(--header-text);
 }
 
 .nav {
@@ -143,4 +144,5 @@ body {
 
   font-size: 0.5rem;
   color: var(--header-text);
+  border-top: 1px solid var(--header-text);
 }
