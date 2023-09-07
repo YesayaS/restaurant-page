@@ -73,7 +73,7 @@ function initializeWebpage() {
   body.appendChild(createContent());
   body.appendChild(createFooter());
 
-  loadMenu(contentClass);
+  loadContact(contentClass);
 }
 
 initializeWebpage();

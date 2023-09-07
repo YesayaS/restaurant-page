@@ -20,7 +20,7 @@ function loadMenu(contentClass) {
 
 function createCard(food) {
   const card = document.createElement("div");
-  card.classList.add("card");
+  card.classList.add("food-card");
 
   const foodName = document.createElement("div");
   foodName.classList.add("foodName");
