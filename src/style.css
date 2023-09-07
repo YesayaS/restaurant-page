@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
 
 * {
   margin: 0;
@@ -9,7 +9,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: 5px;
+  border-radius: 5px;
   background-color: #49494970;
 }
 
@@ -36,13 +36,13 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   backdrop-filter: blur(5px) brightness(45%);
-  font-family: 'Merienda', cursive;
+  font-family: "Merienda", cursive;
 }
 
-@media (max-width:800px){
-    body{
-        background-size:800px
-    }
+@media (max-width: 800px) {
+  body {
+    background-size: 800px;
+  }
 }
 
 .header {
@@ -139,36 +139,36 @@ body {
   border-radius: 2px;
 }
 
-.contact{
-    padding: 20px 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.contact {
+  padding: 20px 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    gap: 25px;
+  gap: 25px;
 }
 
-.contact-card{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 400px;
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 400px;
 
-    padding: 25px;
-    border-radius: 15px;
+  padding: 25px;
+  border-radius: 15px;
 
-    background-color: var(--card-bg);
+  background-color: var(--card-bg);
 }
 
-.contact-head{
-    align-self: center;
-    font-size: 2rem;
-    font-weight: 800;
-    margin-bottom: 20px;
+.contact-head {
+  align-self: center;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 20px;
 }
 
-.credits{
-    font-size: 0.8rem;
+.credits {
+  font-size: 0.8rem;
 }
 
 .footer {
@@ -187,4 +187,15 @@ body {
   font-size: 0.5rem;
   color: var(--header-text);
   border-top: 1px solid var(--header-text);
+}
+
+.github-link {
+  text-decoration: none;
+  color: var(--header-text);
+  font-size: 1rem;
+}
+
+.github-link > img {
+  width: 16px;
+  aspect-ratio: 1;
 }

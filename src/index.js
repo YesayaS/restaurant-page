@@ -2,6 +2,7 @@ import { loadHome } from "./home";
 import { loadContact } from "./contact";
 import { loadMenu } from "./menu";
 import "./style.css";
+import githubImg from "./github-mark-white.png";
 
 const contentClass = "content";
 
@@ -71,8 +72,14 @@ function createFooter() {
   const footer = document.createElement("div");
   footer.classList.add("footer");
 
-  const restaurantTitle = document.createElement("h1");
-  restaurantTitle.textContent = "Copyright © YesayaS";
+  const restaurantTitle = document.createElement("a");
+  restaurantTitle.classList.add("github-link");
+  restaurantTitle.textContent = "YesayaS ";
+  restaurantTitle.href = "https://github.com/YesayaS/restaurant-page/tree/main";
+
+  const img = document.createElement("img");
+  img.src = githubImg;
+  restaurantTitle.appendChild(img);
 
   footer.appendChild(restaurantTitle);
   return footer;
