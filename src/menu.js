@@ -23,15 +23,15 @@ function createCard(food) {
   card.classList.add("food-card");
 
   const foodName = document.createElement("div");
-  foodName.classList.add("foodName");
+  foodName.classList.add("food-name");
   foodName.textContent = food.name;
 
   const foodDescription = document.createElement("div");
-  foodDescription.classList.add("foodDescription");
+  foodDescription.classList.add("food-description");
   foodDescription.textContent = food.description;
 
   const foodImage = document.createElement("div");
-  foodImage.classList.add("foodImage");
+  foodImage.classList.add("food-image");
   foodImage.style.backgroundImage = `url(${food.imageUrl})`;
 
   card.appendChild(foodName);
@@ -50,13 +50,13 @@ const menuList = [
   {
     name: "Rendang",
     description:
-      "Slow-cooked, tender beef stewed in a rich and aromatic blend of spices and coconut milk",
+      "Slow-cooked, tender beef stewed in a rich and aromatic blend of spices and coconut milk.",
     imageUrl: rendang,
   },
   {
     name: "Satay",
     description:
-      "Skewered and grilled meat (usually chicken or beef) served with a flavorful peanut sauce",
+      "Skewered and grilled meat (usually chicken or beef) served with a flavorful peanut sauce.",
     imageUrl: satay,
   },
   {
